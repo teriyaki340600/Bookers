@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <!-- CSSファイルの読み込み -->
+  <link rel="stylesheet" href="show.css">
+  <title>WebCampBackendNew</title>
+</head>
+
+<body>
+  <p id="notice"></p>
+  <p>
+    <strong>Title: </strong><%= @book.title %>
+  </p>
+  <p>
+    <strong>Body: </strong><%= @book.body %>
+  </p>
+
+  <%= link_to "Edit", edit_book_path(@book.id) %>
+  |
+  <%= link_to "Back", "/books" %>
+</body>
